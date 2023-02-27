@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <mata http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initila-scale=1.0">
+        
+        <title>Karabos Blog</title>
+        {% load static %}
+        <!-----link to CSS page---->
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+        <!--box icons-->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <body>
+
+        <!----header -->
+        <header>
+            <div class="nav container">
+                <a href=" {% url 'index' %}" class="logo">Kar<span>abo</span></a>
+
+                <a href="#" class="sub">Subscribe
+
+                </a>
+        </div>
+        </header>
+        <!------home---->
+        <section class="home" id="home">
+        <section class="post-header">
+            <div class="header-content post-header">
+                <!---back to home-->
+                <a href="{% url 'page' %}" class="logo">Back to home</a>
+                <!---title-->
+                <h1 class="header-title">How to create the best circults online</h1>
+                <!----post image-->
+                <img src="{% static '/Images/images.jpeg' %}" alt="" class="header-img">
+
+            </div>
+        </section>
+    </section>
+
+        <section class="post-content post container">
+            <h2 class=sub-heading>Create Best digital circults</h2>
+            <p class="post-text">Tinkercad is a free, easy-to-use app for 3D design, electronics, and coding. It's used by teachers, 
+                kids, hobbyists, and designers to imagine, design, and make anything! Users can quickly learn how to use the Tinkercad software through
+                 basic tutorial lessons that focus on the basics of the Tinkercad tool.
+                
+                 Tinkercad is an online collection of software tools from Autodesk that enable complete beginners to
+                  create 3D models. This CAD software is based on constructive solid geometry
+                  (CSG), which allows users to create complex models by combining simpler objects together
+
+                  Tinkercard featueres:3D Design & Modeling.
+                    Animation.
+                    Annotations.
+                    Collaboration Tools.
+                    Component Library.
+                    Content Library.
+                    Data Import/Export.
+                    Design Management.
+                </p>
+                
+        </section>
+
+        <div>
+            <row>
+                <a href="{% url 'home' %}" class="sub">Post Article</a>
+                <a href="{% url 'show' %}" class="sub">View Article</a>
+            </row>
+        </div>
+
+        <div class="footer container">
+            <p>&#169; All Rights Reserved</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+        </div>
+        <!----JQuery Link-->
+        <script src="https://code.jquery.com/jquery-3.6.3.js" 
+        in
+        tegrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+         crossorigin="anonymous"></script>
+
+        <!----js link--->
+        <script scr="main.js"></script>
+    </body>
+</html>

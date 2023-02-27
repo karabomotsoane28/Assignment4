@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <mata http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initila-scale=1.0">
+        
+        <title>Karabos Blog</title>
+        {% load static %}
+        <!-----link to CSS page---->
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <!--box icons-->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <body>
+
+        <!----header -->
+        <header>
+            <div class="nav container">
+                <a href="#" class="logo">Tinker<span>card</span></a>
+
+                <a href="#" class="sub">Subscribe
+
+                </a>
+        </div>
+        </header>
+        <!------home---->
+        <section class="home" id="home">
+            <div class="home-text container">
+                <h2 class="home-title">Karabos Blog</h2>
+                <span class="home-subtitle"><i>the source to learnign to design digital circults.</i></span>
+            </div>
+        </section>
+
+        <!----post filter-->
+        <div class="post-filter container">
+            <a href="{% url 'index' %}" class="logo1"><i>previous</i></a>
+          
+        </div>
+        <!----posts---->
+        <section class="post container">
+            
+                 <!----post box 1---->
+            <div class="post-box Process">
+                 <img src="{% static '/Images/final-product.png' %}" alt="" class="post-img">
+                <h2 calss="category  ">Fianl Products</h2>
+                <a href="post-page.html" class="post-title">
+                    How to create the best circults,design with tinkercard
+                </a>
+                <span class="post-date">21 February 2023</span>
+                <p class="post-description">Will be able to demo the circuits without building them physically.
+
+                </p>
+                
+
+            </div>
+
+            <!----post box 2---->
+            <div class="post-box Design">
+                <img src="{% static '/Images/download.jpeg' %}" alt="" class="post-img">
+                <h2 calss="category  ">Design</h2>
+                <a href="post-page.html" class="post-title">
+                    How to create the best circults,design with tinkercard
+                </a>
+                <span class="post-date">21 February 2023</span>
+                <p class="post-description">
+
+                </p>Connect and demo using the software.
+                
+            </div>
+
+            <!----post box 3---->
+            <div class="post-box Fianl-Product">
+                <img src="{% static '/Images/Code.webp' %}" alt="" class="post-img">
+                <h2 calss="category  ">Process</h2>
+                <a href="post-page.html" class="post-title">
+                    How to create the best circults,design with tinkercard
+                </a>
+                <span class="post-date">21 February 2023</span>
+                <p class="post-description">Code for your digital circuits. By using Aruino(C language) or through block coding.
+
+                </p>
+                
+                
+
+            </div>
+
+            
+            <!-----comments---->
+            <div class="container mt-5">
+                <div class="d-flex justify-content-center row">
+                    <div class="col-md-8">
+                       
+                            <div class="bg-light p-2">
+                                <div class="d-flex flex-row align-items-start">
+                                    
+                                    <textarea class="textarea1"></textarea>
+                                </div>
+                                <div class="mt-2-text-right">
+                                    <button class="btn" type="button">Post comment</button>
+                                    <button class="btn2" type="button">Cancel</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!----JQuery Link-->
+        <script src="https://code.jquery.com/jquery-3.6.3.js" 
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+         crossorigin="anonymous"></script>
+
+        <!----js link--->
+        <script scr="js/main.js"></script>
+
+    </body>
+    
+</html>
